@@ -1,0 +1,27 @@
+PAANO MAKAKUHA NG ACTUAL E-DELIVER.APK
+
+Ang package na ito ay may GitHub Actions workflow na automatic na nagbu-build
+ng APK sa cloud. Hindi kailangan ng Android Studio sa phone.
+
+1. Gumawa/mag-login sa GitHub.
+2. Gumawa ng bagong repository, halimbawa: E-Deliver.
+3. I-upload ang LAHAT ng files/folders mula sa package na ito sa repository.
+4. Pumunta sa Actions.
+5. Piliin ang "Build E-Deliver APK".
+6. Pindutin ang "Run workflow".
+7. Hintayin matapos ang build.
+8. Sa completed run, buksan ang Artifacts at i-download ang
+   "E-Deliver-debug".
+9. I-extract ang ZIP at makikita ang app-debug.apk.
+10. I-tap ang APK sa Android at piliin ang Install.
+
+NOTES:
+- Ito ay debug APK para sa testing, hindi pa Play Store release.
+- Sa unang install, maaaring kailanganing payagan ang Android na mag-install
+  ng apps mula sa source/browser na ginamit sa pag-download.
+- Hindi kailangan ng Google Maps API key; OpenStreetMap/osmdroid ang mapa.
+- Ang SPX tracking number ay hindi awtomatikong nagbibigay ng buyer GPS address.
+  Kailangan ng authorized SPX API/data source o rider-entered/confirmed location.
+
+Kung ayaw mong gumamit ng GitHub, kailangan ng ibang Android build service o
+computer/build environment na may Android SDK.

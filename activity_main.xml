@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:text="🚚 E-Deliver Route" android:textSize="24sp"
+        android:textStyle="bold" android:paddingBottom="10dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnScan" android:text="📷 Scan QR / Barcode"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/tracking" android:hint="Tracking number"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/address" android:hint="Delivery address"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <CheckBox android:id="@+id/priority" android:text="🔴 Priority"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnAdd" android:text="➕ Add to E-Deliver"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnGps" android:text="📍 Get Rider GPS"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnOptimize" android:text="⚡ Optimize Next Stops"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/next" android:text="Next Delivery: —"
+        android:textSize="18sp" android:textStyle="bold" android:padding="10dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <org.osmdroid.views.MapView android:id="@+id/map"
+        android:layout_width="match_parent" android:layout_height="420dp"/>
+    <TextView android:id="@+id/list" android:text="No parcels yet."
+        android:paddingTop="10dp" android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
